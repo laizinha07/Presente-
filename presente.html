@@ -24,7 +24,6 @@ body {
     padding: 30px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 0 20px #58a6ff55;
 }
 
 h1 {
@@ -47,6 +46,7 @@ button {
     border-radius: 10px;
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
 }
 
 #mensagem {
@@ -59,4 +59,80 @@ button {
     font-size: 40px;
 }
 </style>
-</head
+</head>
+
+<body>
+
+<div class="caixa">
+
+<h1>💻 Feliz Dia do Programador ❤️</h1>
+
+<p>Para o meu programador favorito: <strong>Eduardo</strong>.</p>
+
+<div class="codigo">
+<pre>
+const namorado = "Eduardo";
+const namorada = "Laiany";
+
+while (vida) {
+    amor++;
+    felicidade++;
+}
+</pre>
+</div>
+
+<p>
+Entre todos os códigos do mundo,
+o meu favorito foi aquele que fez
+nossos caminhos se encontrarem. ❤️
+</p>
+
+<p>
+Estamos juntos há <strong id="dias">...</strong> dias!
+</p>
+
+<button type="button" id="botao">
+▶ EXECUTAR SURPRESA()
+</button>
+
+<div id="mensagem">
+
+<p>💌 <strong>Mensagem desbloqueada!</strong></p>
+
+<p>
+Se eu pudesse escolher uma pessoa para
+ter ao meu lado em todas as versões da
+minha vida, escolheria você.
+</p>
+
+<p>
+Obrigada por todos os momentos,
+por todo carinho e por fazer parte
+da minha vida.
+</p>
+
+<p>
+Eu te amo, Eduardo. ❤️
+</p>
+
+<div class="coracao">❤️</div>
+
+</div>
+
+</div>
+
+<script>
+document.getElementById("botao").addEventListener("click", function() {
+    document.getElementById("mensagem").style.display = "block";
+});
+
+const inicio = new Date("2023-01-21T00:00:00");
+const hoje = new Date();
+const diferenca = hoje - inicio;
+const dias = Math.floor(diferenca / 86400000);
+
+document.getElementById("dias").textContent = dias;
+</script>
+
+</body>
+</html>
